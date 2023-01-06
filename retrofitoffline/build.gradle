@@ -38,15 +38,15 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.10'
 
 }
-
 afterEvaluate {
     publishing{
         publications{
             release(MavenPublication){
                 from components.release
+
                 groupId = 'com.github.bilalOfflineCache'
                 artifactId = 'retrofit-offline-cache'
-                version = '1.0'
+                version = '1.1'
             }
         }
     }
