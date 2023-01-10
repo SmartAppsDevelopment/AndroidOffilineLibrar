@@ -1,6 +1,7 @@
 # AndroidOffilineLibrar
 
-AndroidOffilineLibrar is a library to store json data in file at private location of project and later on parse it again when there is no network available 
+AndroidOffilineLibrar is a library to store json data in file at private location of project and later on parse it again when there is no network available.
+place a json file with same name if there is no respnse from server then offline library look for same file in assets folder.
 
 
 
@@ -48,7 +49,7 @@ maven { url 'https://jitpack.io' }
 
 gradle
 dependencies {
-  implementation 'com.github.SmartAppsDevelopment:AndroidOffilineLibrar:1.0.0'
+  implementation 'com.github.SmartAppsDevelopment:AndroidOffilineLibrar:1.0.2'
 }
 ```
 
@@ -57,7 +58,7 @@ Maven:
 <dependency>
   <groupId>com.github.SmartAppsDevelopment</groupId>
   <artifactId>AndroidOffilineLibrar</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 
