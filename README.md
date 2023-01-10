@@ -7,6 +7,10 @@ place a json file with same name if there is no respnse from server then offline
 
 :information_source: AndroidOffilineLibrar is currently in maintenance mode; existing bugs will be fixed, but large new features will likely not be added. If you want to add a new feature, please first search for existing GitHub issues, or create a new one to discuss the feature and get feedback.
 
+### Library Version
+
+[![](https://jitpack.io/v/SmartAppsDevelopment/AndroidOffilineLibrar.svg)](https://jitpack.io/#SmartAppsDevelopment/AndroidOffilineLibrar)
+
 ### Goals
 * Provide convenient way for offline storage 
 * also deal with showing and hiding retrofit response for DEBUG or RELEASE app  
@@ -62,6 +66,3 @@ Maven:
 </dependency>
 ```
 
-### Library Version
-
-[![](https://jitpack.io/v/SmartAppsDevelopment/AndroidOffilineLibrar.svg)](https://jitpack.io/#SmartAppsDevelopment/AndroidOffilineLibrar)
