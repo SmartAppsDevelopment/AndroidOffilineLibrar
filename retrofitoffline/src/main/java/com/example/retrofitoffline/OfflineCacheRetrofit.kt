@@ -23,7 +23,7 @@ class OfflineCacheRetrofit<T> private constructor(
             OfflineCacheRetrofit(gsonFileNam, classre)
     }
 
-    private fun getJsonFromAssets(context: Context): String? {
+    private fun getJsonFromAssets(): String? {
         val jsonString: String = try {
             val inputStream: InputStream = context.getAssets().open(gsonFileNamee)
             val size: Int = inputStream.available()
@@ -40,9 +40,9 @@ class OfflineCacheRetrofit<T> private constructor(
 
     private fun <T> getClassFromAssetGson(classref: Class<T>): T? {
 
-        val respo = getJsonFromAssets(context)
-        val newRespon = respo!!.replace("%20", " ")
         return try {
+            val respo = getJsonFromAssets()
+            val newRespon = respo!!.replace("%20", " ")
             Gson().fromJson(newRespon, classref)
         } catch (e: Exception) {
             null
