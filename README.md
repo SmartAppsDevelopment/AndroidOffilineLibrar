@@ -12,7 +12,33 @@ AndroidOffilineLibrar is a library to store json data in file at private locatio
 * Extensive support of Java Generics
 * Allow custom representations for objects
 * Support arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types)
+###Example 
+With Api Response:
+```
+ override fun onFailure(
+                    statusCode: Int,
+                    headers: Headers?,
+                    errorResponse: String?,
+                    throwable: Throwable?
+                ) {
 
+                    // Get response and save it with AndroidOffilineLibrar
+                    val dataFromFile = OfflineCacheRetrofit.getInstance(
+                        //Name of cache file later will access with same Name e.g UserSession.HOME_RESPONSE_FILE_NAME,
+                        //Class Ref for parse gson e.g FullHomeContent::class.java
+                    ).tryToGetDataClasses()
+
+                }
+
+                override fun onSuccess(statusCode: Int, headers: Headers?, response: String?) {
+                   // When Got  response Fails  retrive it with AndroidOffilineLibrar
+                        OfflineCacheRetrofit.getInstance(
+                                //Name of cache file later will access with same Name e.g UserSession.HOME_RESPONSE_FILE_NAME,
+                        //Class Ref for parse gson e.g FullHomeContent::class.java
+                        ).writeToFile(newRespon)
+                
+                }
+```
 ### Download
 
 Gradle:
