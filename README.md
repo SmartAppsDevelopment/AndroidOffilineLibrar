@@ -62,4 +62,5 @@ Maven:
 ```
 
 ##Library Version
+
 [![](https://jitpack.io/v/SmartAppsDevelopment/AndroidOffilineLibrar.svg)](https://jitpack.io/#SmartAppsDevelopment/AndroidOffilineLibrar)
