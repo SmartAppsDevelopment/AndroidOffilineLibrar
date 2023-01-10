@@ -12,6 +12,7 @@ AndroidOffilineLibrar is a library to store json data in file at private locatio
 * Extensive support of Java Generics
 * Allow custom representations for objects
 * Support arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types)
+
 ###Example 
 With Api Response:
 ```
