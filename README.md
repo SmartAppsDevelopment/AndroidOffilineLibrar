@@ -60,3 +60,6 @@ Maven:
   <version>1.0.0</version>
 </dependency>
 ```
+
+##Library Version
+[![](https://jitpack.io/v/SmartAppsDevelopment/AndroidOffilineLibrar.svg)](https://jitpack.io/#SmartAppsDevelopment/AndroidOffilineLibrar)
