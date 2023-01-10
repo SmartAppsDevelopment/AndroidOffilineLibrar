@@ -13,7 +13,7 @@ AndroidOffilineLibrar is a library to store json data in file at private locatio
 * Allow custom representations for objects
 * Support arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types)
 
-###Example 
+### Example 
 With Api Response:
 ```
  override fun onFailure(
@@ -61,6 +61,6 @@ Maven:
 </dependency>
 ```
 
-##Library Version
+### Library Version
 
 [![](https://jitpack.io/v/SmartAppsDevelopment/AndroidOffilineLibrar.svg)](https://jitpack.io/#SmartAppsDevelopment/AndroidOffilineLibrar)
