@@ -18,9 +18,11 @@ class OfflineCacheRetrofit<T> private constructor(
 
     companion object {
         @SuppressLint("StaticFieldLeak")
-        lateinit var context: Context
-        fun <T> getInstance(gsonFileNam: String, classre: Class<T>) =
+       private lateinit var context: Context
+        fun <T> getInstance(context: Context,gsonFileNam: String, classre: Class<T>) {
+            this.context=context
             OfflineCacheRetrofit(gsonFileNam, classre)
+        }
     }
 
     private fun getJsonFromAssets(): String? {
