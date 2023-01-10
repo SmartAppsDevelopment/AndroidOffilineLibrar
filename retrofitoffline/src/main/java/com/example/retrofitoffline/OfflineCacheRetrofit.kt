@@ -19,9 +19,9 @@ class OfflineCacheRetrofit<T> private constructor(
     companion object {
         @SuppressLint("StaticFieldLeak")
        private lateinit var context: Context
-        fun <T> getInstance(context: Context,gsonFileNam: String, classre: Class<T>) {
+        fun <T> getInstance(context: Context,gsonFileNam: String, classre: Class<T>):OfflineCacheRetrofit<T> {
             this.context=context
-            OfflineCacheRetrofit(gsonFileNam, classre)
+           return OfflineCacheRetrofit(gsonFileNam, classre)
         }
     }
 
